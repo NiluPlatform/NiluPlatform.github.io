@@ -1,90 +1,439 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Nilu</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Nilu</a></li>
-							<li><a href="#one">Introduction</a></li>
-							<li><a href="#two">Downloads</a></li>
-							<li><a href="#three">Links</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+    <link rel="apple-touch-icon" sizes="57x57" href="images/ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/ico/favicon-16x16.png">
+    <link rel="manifest" href="images/ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+    <title>Nilu Platform</title>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <link href="css/normalize.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
+    <script src="js/jquery.fullpage.extensions.min.js"></script>
+</head>
+<body>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Nilu</h1>
-							<p>A Blockchain-based platform for Cryptocurrency, Smart-Contract, and Decentralized Applications</p>
-						</div>
-					</section>
+<div class="container-fluid">
+    <div class="col">
+        <div class="header">
+            <span class="nilu"><img src="images/Nilu.png" alt=""></span>
+            <ul class="menu">
+                <li><a href="javascript:$.fn.fullpage.moveTo(11);">Intro</a></li>
+                <li><a href="javascript:$.fn.fullpage.moveTo(11);">Download</a></li>
+                <li><a href="javascript:$.fn.fullpage.moveTo(11);">Links</a></li>
+                <li><a href="https://meta.nilu.tech/">Meta</a></li>
+            </ul>
+        </div>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights fullscreen">
+        <div id="particles-js"></div>
+        <div class="background">
+            <img class="nilu-slide slide1" style="top: 100px" src="images/1.png" alt="">
+            <img class="nilu-slide slide2" style="opacity:0;top: -700px" src="images/2.png" alt="">
+            <img class="nilu-slide slide3" style="opacity:0;top: -700px" src="images/3.png" alt="">
+            <img class="nilu-slide slide4" style="opacity:0;top: -700px" src="images/4.png" alt="">
+            <img class="nilu-slide slide5" style="opacity:0;top: 100px" src="images/5.png" alt="">
+            <img class="nilu-slide slide6" style="opacity:0;top: 100px" src="images/6.png" alt="">
+            <img class="nilu-slide slide7" style="opacity:0;top: 100px" src="images/7.png" alt="">
+            <img class="nilu-slide slide8" style="opacity:0;top: 100px" src="images/8.png" alt="">
+            <img class="nilu-slide slide9" style="opacity:0;top: -700px;" src="images/9.png" alt="">
+        </div>
 
-<div class="inner">
-<h2>Introduction</h2>
-<p style="text-align:justify">Nilu is a blockchain-based platform with a wide range of applications. Besides providing a cryptocurrency platform, it can also be used to create tokens (ERC20) and deploying DAPPs (Decentralized Applications). Its infrastructure is the same as Ethereum, therefore it inherits Ethereum’s features and potential usages. Nilu’s core development team is primarily focused on facilitating blockchain usages for a broad range of potential users from all walks of life.
-Nilu is not susceptible to pre-mining due to its philosophy and lack of a predominant co-founder group or major shareholder that can potentially create a monopoly over the currency and the ecosystem. Simply by mining, buying Nilu coins or developing Nilu-based DAPPs one can become a member of Nilu community. </p>
+        <div class="text">
+            <h1><span id="text1">Nilu <br></span><span id="text2" style="display: none"> A Blockchain-based platform</span> <span id="text3" style="display: none">for Cryptocurrency</span>
+                <span id="text4" style="display: none">Smart-Contract </span><span id="text5" style="display: none">and</span><span id="text6" style="display: none"> Decentralized Applications</span> <span class="blinking-cursor">|</span></h1>
+        </div>
+
+
+        <div class="scroll-down-arrow">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+        </div>
+
+    </div>
 </div>
-					</section>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up ">
-						<div class="inner">
-							<h2>Downloads</h2>
-							<p><a href="https://github.com/NiluPlatform/go-nilu/releases">NiluPlatform/go-nilu/releases</a></p>
-						</div>
-					</section>
+<div id="fullpage">
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section">
+        <div class="container" style="overflow-y:scroll ">
+            <div class="text-box">
+                <h2 class="box-title">Intoduction</h2>
+                <p>Nilu is a blockchain-based platform with a wide range of applications. Besides providing a
+                    cryptocurrency platform, it can also be used to create tokens (ERC20) and deploying DAPPs
+                    (Decentralized Applications). Its infrastructure is the same as Ethereum, therefore it inherits
+                    Ethereum’s features and potential usages. Nilu’s core development team is primarily focused on
+                    facilitating blockchain usages for a broad range of potential users from all walks of life. Nilu is
+                    not susceptible to pre-mining due to its philosophy and lack of a predominant co-founder group or
+                    major shareholder that can potentially create a monopoly over the currency and the ecosystem. Simply
+                    by mining, buying Nilu coins or developing Nilu-based DAPPs one can become a member of Nilu
+                    community.</p>
+            </div>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Links</h2>
+            <div class="text-box download">
 
-						<p><a href="mailto:hi@nilu.tech"><img class="icons" src="images/email.svg" alt="email">hi[at]nilu[dot]tech</a></p>
-						<p><a href="http://reddit.com/r/nilu" target="_blank"><img class="icons" src="images/reddit-logo.svg" alt="reddit">On Reddit</a></p>
-						<p><a href="http://github.com/NiluPlatform" target="_blank"> <img class="icons" src="images/github-logo.svg" alt="github">On Github</a></p>
-						<p><a href="http://nilu.gitbooks.io" target="_blank"><img class="icons" src="images/icon.svg" alt="icon">Knowledgebase</a></p>
-						</div>
-					</section>
+                <h2 class="box-title">Download</h2>
+                <ul>
+                    <li><a href="http://boardingbot.boorgle.com/" title="iOS"><img src="images/app-store-download.png" alt=""></a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=tech.nilu.wallet" title="Google Play "><img src="images/google-play-download.png" alt=""></a></li>
+                    <li><a href="https://github.com/NiluPlatform/go-nilu/releases" title="Linux"><img src="images/desktop-download.png" alt=""></a></li>
+                </ul>
 
-			</div>
+                <p class="more">For more access options , Please visit <a href="https://meta.nilu.tech/downloads" target="_blank">https://meta.nilu.tech/downloads</a></p>
+            </div>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; nilu.tech. All rights reserved.</li>
-					</ul>
-				</div>
-			</footer>
+            <div class="text-box social">
+                <h2 class="box-title">Links</h2>
+                <ul>
+                    <li><a href="https://discord.gg/VSNPsN6" title="Discord"><img src="images/Discord.png" alt="Discord"></a></li>
+                    <li><a href="https://meta.nilu.tech/explorer" title="Nilu Explorer"><img src="images/Explorer.png" alt="Nilu Explorer"></a></li>
+                    <li><a href="mailto:hi@nilu.tech" title="Email"><img src="images/email.png" alt="Email"></a></li>
+                    <li style="margin-top: 4px"><a href="https://github.com/NiluPlatform" title="GitHub"><img src="images/Github.png" alt="GitHub"></a></li>
+                    <li><a href="https://jq.qq.com/?_wv=1027&k=5ETk2XN" title="QQ Chat (Chinese)"><img src="images/QQ.png" style="width: 38px" alt="QQ Chat (Chinese)"></a></li>
+                </ul>
+                <p class="more">For a complete list of links , Please visit <a href="https://meta.nilu.tech/links" target="_blank">https://meta.nilu.tech/links</a></p>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+            </div>
+        </div>
+    </div>
+</div>
 
-	</body>
+<script src="js/particles.min.js"></script>
+<script>
+    particlesJS.load('particles-js', 'js/particlesjs.json', function () {
+        console.log('callback - particles.js config loaded');
+    });
+
+    $(window).resize(function () {
+        BrowserH = $(window).height();
+        BrowserW = $(window).width();
+        Slide = $('.slide7').height();
+
+        Top = 700;
+        onScreenTop = ((BrowserH - Slide) / 2 ) + "px";
+
+        if (BrowserW < 900) {
+            Top = 100;
+            onScreenTop = 100;
+            $(".nilu-slide").css("top", "100px");
+        } else {
+            $(".nilu-slide ,.text").css("top", onScreenTop);
+        }
+    });
+
+    $(document).ready(function () {
+
+        var BrowserH = $(window).height();
+        var BrowserW = $(window).width();
+        var Slide = $('.slide7').height();
+
+        var Top = 700;
+        var onScreenTop = ((BrowserH - Slide) / 2 ) + "px";
+
+        if (BrowserW < 900) {
+            Top = 100;
+            onScreenTop = 100;
+            $(".nilu-slide ").css("top", "100px");
+        } else {
+            $(".nilu-slide ,.text").css("top", onScreenTop);
+        }
+
+
+        $('#fullpage').fullpage({
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true,
+            verticalCentered: true,
+            afterResize: function (width, height) {
+                BrowserH = $(window).height();
+                BrowserW = $(window).width();
+                Slide = $('.slide7').height();
+
+                Top = 700;
+                onScreenTop = ((BrowserH - Slide) / 2 ) + "px";
+
+                if (BrowserW < 415) {
+                    Top = 50;
+                    onScreenTop = 50;
+                    $(".nilu-slide").css("top", "50px");
+                } else {
+                    $(".nilu-slide,.text").css("top", onScreenTop);
+                }
+            },
+            onLeave: function (origin, destination, direction) {
+
+                console.log(destination);
+                if (destination == 2 && direction == "down") {
+
+                    $(".slide1").animate({
+                        'top': Top + 'px',
+                        'opacity': '0'
+                    }, {duration: '5000', queue: false});
+
+                    $(".slide2 , .slide3").animate({
+                        'top': onScreenTop,
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false});
+
+                    $("#text2").fadeIn(600);
+
+                } else if (destination == 3 && direction == "down") {
+
+                    $(".slide4").animate({
+                        'top': onScreenTop,
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false});
+
+                    $("#text3").fadeIn(600);
+                } else if (destination == 4 && direction == "down") {
+
+                    $(".slide4").animate({
+                        'top': ( -1 ) * Top + 'px',
+                        'opacity': '0'
+                    }, {duration: '5000', queue: false});
+
+                    $(".slide5").animate({
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false});
+
+                    $("#text4").fadeIn(600);
+                } else if (destination == 5 && direction == "down") {
+                    $(".slide6").animate({
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false});
+
+                } else if (destination == 6 && direction == "down") {
+
+                    $(".slide6").animate({
+                        'opacity': '0'
+                    }, {duration: '5000', queue: false});
+
+                    $(".slide5").animate({
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false});
+
+                } else if (destination == 7 && direction == "down") {
+
+                    $(".slide5").animate({
+                        'opacity': '0'
+                    }, {duration: '5000', queue: false});
+
+
+                    $(".slide3").animate({
+                        'top': onScreenTop,
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false});
+
+                    $("#text5").fadeIn(600);
+
+                } else if (destination == 8 && direction == "down") {
+
+                    $(".slide2 , .slide3").animate({
+                        'opacity': 0
+                    }, {duration: '5000', queue: false});
+
+                    $(".slide7").animate({
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false});
+
+                } else if (destination == 9 && direction == "down") {
+
+                    $(".slide7").animate({
+                        'opacity': '0'
+                    }, {duration: '5000', queue: false});
+
+
+                    $(".slide8").animate({
+                        'top': onScreenTop,
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false});
+
+                } else if (destination == 10 && direction == "down") {
+
+                    $(".slide9").animate({
+                        'top': onScreenTop,
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false});
+
+                    $("#text6").fadeIn(600);
+                    $(".blinking-cursor").fadeOut(600);
+
+
+                } else if (destination == 11 && direction == "down") {
+
+                    $(".nilu-slide , .text , #particles-js ,.scroll-down-arrow").fadeOut();
+
+
+                } else if (destination == 10 && direction == "up") {
+
+                    $(".slide9 , .slide8 ,.text ").css({
+                        'top': onScreenTop,
+                        'opacity': '1'
+                    });
+
+                    $(".slide1 , .slide2, .slide3, .slide4, .slide5, .slide6, .slide7 ").css({
+                        'top': onScreenTop,
+                        'opacity': '0'
+                    });
+
+
+                    $(".nilu-slide , .text , #particles-js ,.scroll-down-arrow ,.text h1 span").fadeIn();
+
+
+                } else if (destination == 9 && direction == "up") {
+                    $(".slide9").animate({
+                        'top': ( -1 ) * Top + 'px',
+                        'opacity': '0'
+                    }, {duration: '5000', queue: false});
+
+                    $(".slide8").animate({
+                        'top': onScreenTop,
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false});
+
+                    $("#text6").fadeOut(600);
+                    $(".blinking-cursor").fadeIn(600);
+
+
+                } else if (destination == 8 && direction == "up") {
+
+                    $(".slide8").animate({
+                        'opacity': '0'
+                    }, {duration: '5000', queue: false});
+
+                    $(".slide7").animate({
+                        'top': onScreenTop,
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false});
+
+                } else if (destination == 7 && direction == "up") {
+
+
+                    $(".slide7").animate({
+                        'opacity': '0'
+                    }, {duration: '5000', queue: false});
+
+
+                    $(".slide2 , .slide3").animate({
+                        'top': onScreenTop,
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false});
+
+                } else if (destination == 6 && direction == "up") {
+
+
+                    $(".slide5").animate({
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false});
+
+                    $("#text5").fadeOut(600);
+
+                } else if (destination == 5 && direction == "up") {
+
+                    $(".slide6").animate({
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false});
+
+                    $(".slide5").animate({
+                        'opacity': '0'
+                    }, {duration: '5000', queue: false});
+
+                } else if (destination == 4 && direction == "up") {
+
+                    $(".slide6").animate({
+                        'opacity': '0'
+                    }, {duration: '5000', queue: false});
+
+
+                    $(".slide5").animate({
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false});
+
+                } else if (destination == 3 && direction == "up") {
+
+                    $(".slide5").animate({
+                        'opacity': '0'
+                    }, {duration: '5000', queue: false});
+
+                    $(".slide4").animate({
+                        'top': onScreenTop,
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false});
+
+                    $("#text4").fadeOut(600);
+
+                } else if (destination == 2 && direction == "up") {
+
+                    $(".slide4").animate({
+                        'top': ( -1 ) * Top + 'px',
+                        'opacity': '0'
+                    }, {duration: '5000', queue: false});
+
+                    $("#text3").fadeOut(600);
+                } else if (destination == 1 && direction == "up") {
+
+                    console.log('21');
+                    $(".slide1").animate({
+                        'top': onScreenTop,
+                        'opacity': '1'
+                    }, {duration: '5000', queue: false}, function () {
+                        // Animation complete.
+                    });
+
+                    $(".slide2 , .slide3").animate({
+                        'top': ( -1 ) * Top + 'px',
+                        'opacity': '0'
+                    }, {duration: '5000', queue: false});
+
+                    $("#text2").fadeOut(600);
+
+                }
+
+            }
+
+
+        });
+
+    });
+
+    $(".scroll-down-arrow").click(function () {
+        //fullpage_api.moveSectionDown();
+        $.fn.fullpage.moveSectionDown();
+    });
+
+</script>
+
+</body>
 </html>
