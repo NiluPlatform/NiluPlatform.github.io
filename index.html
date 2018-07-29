@@ -31,6 +31,7 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scrolloverflow.min.js"></script>
     <script src="js/jquery.fullpage.min.js"></script>
     <script src="js/jquery.fullpage.extensions.min.js"></script>
 </head>
@@ -139,6 +140,7 @@
     $(window).resize(function () {
         BrowserH = $(window).height();
         BrowserW = $(window).width();
+        console.log(BrowserH);
         Slide = $('.slide7').height();
 
         Top = 700;
@@ -157,7 +159,14 @@
 
         var BrowserH = $(window).height();
         var BrowserW = $(window).width();
-        var Slide = $('.slide7').height();
+
+
+        var Slide = $('.slide1').height();
+
+        if (Slide == 0 ){
+            Slide = $('.slide1').innerHeight();
+        }
+        console.log(Slide);
 
         var Top = 700;
         var onScreenTop = ((BrowserH - Slide) / 2 ) + "px";
@@ -170,12 +179,39 @@
             $(".nilu-slide ,.text").css("top", onScreenTop);
         }
 
-
         $('#fullpage').fullpage({
             //options here
             autoScrolling: true,
             scrollHorizontally: true,
             verticalCentered: true,
+            scrollOverflow: true,
+            afterLoad: function(origin, destination, direction){
+                if(destination == 1 ){
+
+                    var BrowserH = $(window).height();
+                    var BrowserW = $(window).width();
+
+
+                    var Slide = $('.slide1').height();
+
+                    if (Slide == 0 ){
+                        Slide = $('.slide1').innerHeight();
+                    }
+                    console.log(Slide);
+
+                    var Top = 700;
+                    var onScreenTop = ((BrowserH - Slide) / 2 ) + "px";
+
+                    if (BrowserW < 900) {
+                        Top = 100;
+                        onScreenTop = 100;
+                        $(".nilu-slide ").css("top", "100px");
+                    } else {
+                        $(".nilu-slide ,.text").css("top", onScreenTop);
+                    }
+
+                }
+            },
             afterResize: function (width, height) {
                 BrowserH = $(window).height();
                 BrowserW = $(window).width();
@@ -432,6 +468,8 @@
         //fullpage_api.moveSectionDown();
         $.fn.fullpage.moveSectionDown();
     });
+
+
 
 </script>
 

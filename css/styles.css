@@ -429,6 +429,10 @@ body {
     .menu {
         margin-right: -130px;
     }
+    #particles-js {
+    display: none;
+    }
+
 }
 @media all and (max-width: 330px) {
     .nilu {
