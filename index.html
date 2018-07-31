@@ -34,6 +34,18 @@
     <script src="js/scrolloverflow.min.js"></script>
     <script src="js/jquery.fullpage.min.js"></script>
     <script src="js/jquery.fullpage.extensions.min.js"></script>
+
+
+    <style>
+        .container-fluid {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+        div#last-section .fp-tableCell{
+            overflow-y: scroll;
+        }
+    </style>
 </head>
 <body>
 
@@ -88,8 +100,8 @@
     <div class="section"></div>
     <div class="section"></div>
     <div class="section"></div>
-    <div class="section">
-        <div class="container" style="overflow-y:scroll ">
+    <div class="section" id="last-section">
+        <div class="container1" style="overflow-y:scroll ">
             <div class="text-box">
                 <h2 class="box-title">Intoduction</h2>
                 <p>Nilu is a blockchain-based platform with a wide range of applications. Besides providing a
@@ -181,10 +193,14 @@
 
         $('#fullpage').fullpage({
             //options here
+            scrollOverflowReset: true,
+            scrollOverflowResetKey: 'YWx2YXJvdHJpZ28uY29tXzlRaGMyTnliMnhzVDNabGNtWnNiM2RTWlhObGRBPT14Ykk=',
             autoScrolling: true,
             scrollHorizontally: true,
             verticalCentered: true,
             scrollOverflow: true,
+            // normalScrollElements: '#last-section',
+            scrollOverflow:true,
             afterLoad: function(origin, destination, direction){
                 if(destination == 1 ){
 
@@ -329,10 +345,12 @@
 
                 } else if (destination == 11 && direction == "down") {
 
-                    $(".nilu-slide , .text , #particles-js ,.scroll-down-arrow").fadeOut();
+                    //$(".nilu-slide , .text , #particles-js ,.scroll-down-arrow").fadeOut();
+                    $(".container-fluid").fadeOut();
 
 
                 } else if (destination == 10 && direction == "up") {
+                    $(".container-fluid").fadeIn();
 
                     $(".slide9 , .slide8 ,.text ").css({
                         'top': onScreenTop,
