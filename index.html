@@ -49,18 +49,26 @@
 </head>
 <body>
 
+
+<div class="header">
+    <span class="nilu"><img src="images/Nilu.png" alt=""></span>
+    <ul class="menu">
+        <li><a href="javascript:$.fn.fullpage.moveTo(11);">Intro</a></li>
+        <li><a href="javascript:$.fn.fullpage.moveTo(11);">Download</a></li>
+        <li><a href="javascript:$.fn.fullpage.moveTo(11);">Links</a></li>
+        <li><a href="https://meta.nilu.tech/">Meta</a></li>
+    </ul>
+</div>
+
+
+<div class="scroll-down-arrow">
+    <div class="chevron"></div>
+    <div class="chevron"></div>
+    <div class="chevron"></div>
+</div>
+
 <div class="container-fluid">
     <div class="col">
-        <div class="header">
-            <span class="nilu"><img src="images/Nilu.png" alt=""></span>
-            <ul class="menu">
-                <li><a href="javascript:$.fn.fullpage.moveTo(11);">Intro</a></li>
-                <li><a href="javascript:$.fn.fullpage.moveTo(11);">Download</a></li>
-                <li><a href="javascript:$.fn.fullpage.moveTo(11);">Links</a></li>
-                <li><a href="https://meta.nilu.tech/">Meta</a></li>
-            </ul>
-        </div>
-
         <div id="particles-js"></div>
         <div class="background">
             <img class="nilu-slide slide1" style="top: 100px" src="images/1.png" alt="">
@@ -78,14 +86,6 @@
             <h1><span id="text1">Nilu <br></span><span id="text2" style="display: none"> A Blockchain-based platform</span> <span id="text3" style="display: none">for Cryptocurrency</span>
                 <span id="text4" style="display: none">Smart-Contract </span><span id="text5" style="display: none">and</span><span id="text6" style="display: none"> Decentralized Applications</span> <span class="blinking-cursor">|</span></h1>
         </div>
-
-
-        <div class="scroll-down-arrow">
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-        </div>
-
     </div>
 </div>
 
@@ -199,6 +199,7 @@
             scrollHorizontally: true,
             verticalCentered: true,
             scrollOverflow: true,
+            touchSensitivity:2,
             // normalScrollElements: '#last-section',
             scrollOverflow:true,
             afterLoad: function(origin, destination, direction){
@@ -482,7 +483,7 @@
 
     });
 
-    $(".scroll-down-arrow").click(function () {
+    $(".scroll-down-arrow , .section").click(function () {
         //fullpage_api.moveSectionDown();
         $.fn.fullpage.moveSectionDown();
     });

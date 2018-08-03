@@ -165,10 +165,12 @@ body {
 
 .scroll-down-arrow {
     position: fixed;
-    bottom: 100px;
+    bottom: 0;
     left: 50%;
     margin-left: -50px;
     z-index: 100;
+    width: 50px;
+    height: 100px;
 }
 
 .text-box p {
@@ -429,10 +431,6 @@ body {
     .menu {
         margin-right: -130px;
     }
-    #particles-js {
-    display: none;
-    }
-
 }
 @media all and (max-width: 330px) {
     .nilu {
