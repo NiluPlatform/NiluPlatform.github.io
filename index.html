@@ -71,7 +71,7 @@
     <div class="col">
         <div id="particles-js"></div>
         <div class="background">
-            <img class="nilu-slide slide1" style="top: 100px" src="images/1.png" alt="">
+            <img class="nilu-slide slide1" style="top: 100px;" src="images/1.png" alt="">
             <img class="nilu-slide slide2" style="opacity:0;top: -700px" src="images/2.png" alt="">
             <img class="nilu-slide slide3" style="opacity:0;top: -700px" src="images/3.png" alt="">
             <img class="nilu-slide slide4" style="opacity:0;top: -700px" src="images/4.png" alt="">
@@ -178,7 +178,7 @@
         if (Slide == 0 ){
             Slide = $('.slide1').innerHeight();
         }
-        console.log(Slide);
+
 
         var Top = 700;
         var onScreenTop = ((BrowserH - Slide) / 2 ) + "px";
@@ -214,7 +214,6 @@
                     if (Slide == 0 ){
                         Slide = $('.slide1').innerHeight();
                     }
-                    console.log(Slide);
 
                     var Top = 700;
                     var onScreenTop = ((BrowserH - Slide) / 2 ) + "px";
@@ -230,6 +229,7 @@
                 }
             },
             afterResize: function (width, height) {
+
                 BrowserH = $(window).height();
                 BrowserW = $(window).width();
                 Slide = $('.slide7').height();
@@ -247,7 +247,17 @@
             },
             onLeave: function (origin, destination, direction) {
 
-                console.log(destination);
+                BrowserH = $(window).height();
+                BrowserW = $(window).width();
+                Top = 700;
+                if( BrowserW > 500 ){
+                    onScreenTop = ((BrowserH - 293 ) / 2 ) + "px";
+                }else {
+                    Top = 50;
+                    onScreenTop = 50;
+                    $(".nilu-slide").css("top", "50px");
+                }
+
                 if (destination == 2 && direction == "down") {
 
                     $(".slide1").animate({
@@ -346,12 +356,14 @@
 
                 } else if (destination == 11 && direction == "down") {
 
-                    //$(".nilu-slide , .text , #particles-js ,.scroll-down-arrow").fadeOut();
                     $(".container-fluid").fadeOut();
 
 
                 } else if (destination == 10 && direction == "up") {
+
                     $(".container-fluid").fadeIn();
+                    $(".nilu-slide , .text , #particles-js ,.scroll-down-arrow ,.text h1 span").fadeIn();
+
 
                     $(".slide9 , .slide8 ,.text ").css({
                         'top': onScreenTop,
@@ -362,10 +374,6 @@
                         'top': onScreenTop,
                         'opacity': '0'
                     });
-
-
-                    $(".nilu-slide , .text , #particles-js ,.scroll-down-arrow ,.text h1 span").fadeIn();
-
 
                 } else if (destination == 9 && direction == "up") {
                     $(".slide9").animate({
